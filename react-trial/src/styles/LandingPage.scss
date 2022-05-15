@@ -3,6 +3,27 @@
     background-size: cover;
 }
 
-.homeTitle {
-    text-align: center;
+
+.justifyText {
+    text-align: justify;
 }
+
+.whiteColor {
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px black;
+    .leftHomeTitle {
+        font-size: 50px;
+    }
+    .leftHomeSubtitle {
+        font-size: 20px;
+    }
+    .rightHomeTitle {
+        font-size: 30px;
+    }
+    .rightHomeSubtitle {
+        font-size: 15px;
+    }
+}
+
+
+
