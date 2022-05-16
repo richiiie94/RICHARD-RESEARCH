@@ -35,6 +35,14 @@
     text-align: justify;
 }
 
+.mainNavbarTransparent {
+    animation: fadeOut 500ms forwards;
+    transition-property: background;
+    transition-duration: 500ms;
+    transition-delay: 500ms;
+    background: transparent;
+}
+
 .mainNavbar {
     background: ivory;
 }

@@ -32,7 +32,7 @@ export default class NavigationBar extends React.Component {
     render() {
         return (
             <div>
-                <nav className={`navbar fixed-top navbar-expand-lg navbar-light mainNavbar ${this.state.showNavbar ? 'activeNavbar' : 'hiddenNavbar'}`}>
+                <nav className={`navbar fixed-top navbar-expand-lg navbar-light ${this.state.navbarPos === 0 ? 'mainNavbarTransparent' : 'mainNavbar'} ${this.state.showNavbar ? 'activeNavbar' : 'hiddenNavbar'}`}>
                     <div className="container-fluid">
                         <a className="navbar-brand" href="#">Navbar</a>
 
