@@ -1,13 +1,54 @@
-.firstBG {
-    height: 100vh;
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+.parallaxBG {
+    background: #000;
+    background: linear-gradient(
+        rgba(0, 0 ,0, 0.3),
+        rgba(0, 0, 0, 0.8),
+    );
+    background-attachment: fixed;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .justifyText {
     text-align: justify;
 }
 
-.whiteColor {
+.mainNavbar {
+    background: ivory;
+}
+
+.activeNavbar {
+    animation: fadeIn 500ms forwards;
+}
+
+.hiddenNavbar {
+    animation: fadeOut 500ms forwards;
+}
+
+//! HOME
+.whiteColorHome {
     color: whitesmoke;
     text-shadow: 2px 2px 4px black;
     height: 80vh;
@@ -26,6 +67,11 @@
         font-size: 15px;
     }
 }
+//! END OF HOME
 
-
+.content {
+    margin-top: -80px;
+    box-shadow: 0 0 20px -6px rgba(0, 0 ,0, 0.2);
+    background: whitesmoke;
+}
 

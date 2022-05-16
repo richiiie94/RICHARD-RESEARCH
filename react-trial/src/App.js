@@ -4,8 +4,9 @@ import './styles/LandingPage.scss'
 import './App.scss';
 
 import React from 'react';
-import Home from './components/Home';
 import NavigationBar from './components/NavigationBar';
+import Home from './components/Home';
+import About from './components/About';
 
 import coconutImage from './assets/images/coconut.jpg';
 
@@ -24,9 +25,18 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div className="firstBG" style={{backgroundImage: `url(${this.state.imageURL})`}}>
+        <div className="parallaxBG" style={{backgroundImage: `url(${this.state.imageURL})`}}>
           <NavigationBar />
           <Home />
+        </div>
+
+        <div className="container">
+          <div className="content">
+            <About />
+            <Home />
+            <Home />
+            <Home />
+          </div>
         </div>
       </div>
     );

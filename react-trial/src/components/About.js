@@ -7,7 +7,7 @@ class Home extends React.Component {
         return (
             <div>
                 <div className="container">
-                    <div className="row whiteColorHome">
+                    <div className="row whiteColorAbout">
                         <div className="col">
                             <div className="row leftHomeTitle">
                                 COCONUT
