@@ -7,18 +7,19 @@ import React from 'react';
 import NavigationBar from './components/NavigationBar';
 import Home from './components/Home';
 import About from './components/About';
+import Product from './components/Product';
 
-import coconutImage from './assets/images/coconut.jpg';
+import backgroundImage from './assets/images/coconut.jpg';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {imageURL: coconutImage};
+    this.state = {imageURL: backgroundImage};
   }
 
   handleImageChange() {
     this.setState({
-      imageURL: coconutImage
+      imageURL: backgroundImage
     })
   }
   
@@ -33,7 +34,7 @@ class App extends React.Component {
         <div className="container">
           <div className="content">
             <About />
-            <Home />
+            <Product />
             <Home />
             <Home />
           </div>

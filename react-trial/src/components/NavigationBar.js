@@ -25,8 +25,8 @@ export default class NavigationBar extends React.Component {
             navbarPos: document.body.getBoundingClientRect().top,
             showNavbar: document.body.getBoundingClientRect().top > this.state.navbarPos,
         })
-        console.log('Scroll: ', document.body.getBoundingClientRect().top);
-        console.log('position before: ', this.state.navbarPos);
+        // console.log('Scroll: ', document.body.getBoundingClientRect().top);
+        // console.log('position before: ', this.state.navbarPos);
     }
 
     render() {

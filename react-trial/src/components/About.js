@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles.scss'
 import '../styles/LandingPage.scss'
 
-class Home extends React.Component {
+class About extends React.Component {
     render() {
         return (
             <div>
@@ -40,4 +40,4 @@ class Home extends React.Component {
     }
 }
 
-export default Home;
+export default About;
