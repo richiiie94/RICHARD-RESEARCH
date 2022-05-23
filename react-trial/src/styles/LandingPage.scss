@@ -29,6 +29,7 @@
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .justifyText {
@@ -59,7 +60,7 @@
 .whiteColorHome {
     color: whitesmoke;
     text-shadow: 2px 2px 4px black;
-    height: 80vh;
+    height: 100vh;
     align-content: center;
     .leftHomeTitle {
         font-size: 50px;
