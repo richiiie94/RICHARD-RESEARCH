@@ -64,12 +64,12 @@ carousels.forEach((item, index) => {
 
     carouselsElementDataMobile.push(
         <div className={"carousel-item" + ((index === 0) ? ' active' : '')} data-bs-interval="8000" key={"image-mobile-" + index}>
-            <div className="row">
-                <img src={item['img']} className="d-block w-100 carouselImageMobile" alt={item['name']} />
+            <div className="row imgWrap">
+                <img src={item['img']} className="d-block w-100" alt={item['name']} />
 
-                {/* <div className="col d-flex align-items-center">
+                <div className="container imgDescription">
                     {item['description']}
-                </div> */}
+                </div>
             </div>
         </div>
     );
