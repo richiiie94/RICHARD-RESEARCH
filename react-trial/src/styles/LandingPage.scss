@@ -36,6 +36,23 @@
     text-align: justify;
 }
 
+@mixin textStart {
+    text-align: start;
+    text-align: justify;
+}
+
+.textStart {
+    @include textStart;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.textEnd {
+    text-align: end;
+}
+
 .mainNavbarTransparent {
     animation: fadeOut 500ms forwards;
     transition-property: background;
@@ -69,10 +86,12 @@
         font-size: 20px;
     }
     .rightHomeTitle {
+        @extend .textEnd;
         display: block;
         font-size: 30px;
     }
     .rightHomeSubtitle {
+        @extend .textEnd;
         font-size: 15px;
     }
 }
@@ -82,5 +101,29 @@
     margin-top: -80px;
     box-shadow: 0 0 20px -6px rgba(0, 0 ,0, 0.2);
     background: whitesmoke;
+}
+
+@media (max-width: 575.98px) {
+    .whiteColorHome {
+        color: whitesmoke;
+        text-shadow: 2px 2px 4px black;
+        height: 100vh;
+        align-content: center;
+        .leftHomeTitle {
+            font-size: 40px
+        }
+        .leftHomeSubtitle {
+            font-size: 12px;
+        }
+        .rightHomeTitle {
+            @include textStart;
+            display: block;
+            font-size: 25px;
+        }
+        .rightHomeSubtitle {
+            @include textStart;
+            font-size: 12px;
+        }
+    }
 }
 
