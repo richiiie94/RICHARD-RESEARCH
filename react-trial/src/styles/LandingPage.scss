@@ -62,7 +62,7 @@
 }
 
 .mainNavbar {
-    background: ivory;
+    background: #fbfbd2;
 }
 
 .activeNavbar {
@@ -97,10 +97,17 @@
 }
 //! END OF HOME
 
+.containerStyle {
+    background: #fbfbd2;
+}
+
 .content {
-    margin-top: -80px;
     box-shadow: 0 0 20px -6px rgba(0, 0 ,0, 0.2);
     background: whitesmoke;
+}
+
+.contentSpecial {
+    margin-top: -100px;
 }
 
 @media (max-width: 575.98px) {
@@ -124,6 +131,10 @@
             @include textStart;
             font-size: 12px;
         }
+    }
+
+    .carouselImageMobile:hover {
+        transform: rotateY(180deg);
     }
 }
 

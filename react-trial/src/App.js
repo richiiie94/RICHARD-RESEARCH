@@ -25,19 +25,18 @@ class App extends React.Component {
   
   render() {
     return (
-      <div>
+      <div className="d-grid gap-3 containerStyle">
         <div className="parallaxBG" style={{backgroundImage: `url(${this.state.imageURL})`}}>
           <NavigationBar />
           <Home />
         </div>
 
-        <div className="container">
-          <div className="content">
-            <About />
-            <Product />
-            <Home />
-            <Home />
-          </div>
+        <div className="container content contentSpecial">
+          <About />
+        </div>
+
+        <div className="content">
+          <Product />
         </div>
       </div>
     );
