@@ -5,7 +5,7 @@ import '../styles/LandingPage.scss'
 class Home extends React.Component {
     render() {
         return (
-            <div>
+            <div id="HomeApp">
                 <div className="container">
                     <div className="row whiteColorHome">
                         <div className="col-sm-6 px-4 py-2 py-sm-4">

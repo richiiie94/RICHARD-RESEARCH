@@ -77,7 +77,7 @@ carousels.forEach((item, index) => {
 class Product extends React.Component {
     render() {
         return (
-            <div className="container-fluid">
+            <div className="container-fluid" id="ProductApp">
                 {/* //! DESKTOP VERSION */}
                 <div className="d-none d-sm-block">
                     <div id="carouselProductDesktop" className="carousel carousel-dark carousel-fade" data-bs-ride="carousel">

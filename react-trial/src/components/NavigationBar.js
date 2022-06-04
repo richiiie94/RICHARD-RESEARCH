@@ -9,7 +9,11 @@ export default class NavigationBar extends React.Component {
         this.state = {
             navbarPos: 0,
             showNavbar: true,
-        }
+        };
+
+        this.home = 'Home';
+        this.about = 'About';
+        this.product = 'Product';
     }
 
     componentDidMount() {
@@ -43,11 +47,15 @@ export default class NavigationBar extends React.Component {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                    <a className="nav-link active" aria-current="page" href="#HomeApp">{this.home}</a>
                                 </li>
 
                                 <li className="nav-item">
-                                    <a className="nav-link active" href="#">About</a>
+                                    <a className="nav-link active" href="#AboutApp">{this.about}</a>
+                                </li>
+
+                                <li className="nav-item">
+                                    <a className="nav-link active" href="#ProductApp">{this.product}</a>
                                 </li>
                             </ul>
                         </div>

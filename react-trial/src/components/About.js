@@ -5,7 +5,7 @@ import '../styles/LandingPage.scss'
 class About extends React.Component {
     render() {
         return (
-            <div>
+            <div id="AboutApp">
                 <div className="container">
                     <div className="row whiteColorAbout">
                         <div className="col">
