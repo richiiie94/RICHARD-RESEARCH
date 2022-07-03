@@ -8,6 +8,9 @@ import NavigationBar from './components/NavigationBar';
 import Home from './components/Home';
 import About from './components/About';
 import Product from './components/Product';
+import KeyFeatures from './components/KeyFeatures';
+import Team from './components/Team';
+import CompanyProfile from './components/CompanyProfile';
 
 import backgroundImage from './assets/images/coconut.jpg';
 
@@ -30,13 +33,23 @@ class App extends React.Component {
           <NavigationBar />
           <Home />
         </div>
-
-        <div className="container content contentSpecial">
+        {/* //! DESKTOP VERSION */}
+        <div className="d-none d-sm-block container content contentSpecial">
+          <About />
+        </div>
+        {/* //! MOBILE VERSION */}
+        <div className="d-block d-sm-none content contentSpecial">
           <About />
         </div>
 
         <div className="content">
+          <KeyFeatures />
           <Product />
+          {/* <Team /> */}
+        </div>
+
+        <div className="content">
+          <CompanyProfile />
         </div>
       </div>
     );

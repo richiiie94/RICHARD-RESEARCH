@@ -54,7 +54,7 @@
 }
 
 @mixin navbarBG {
-    background: #fbfbd2 !important;
+    background: whitesmoke !important;
 }
 
 .navbarBG {
@@ -105,8 +105,76 @@
 }
 //! END OF HOME
 
+//! ABOUT
+.whiteColorAbout {
+    align-content: center;
+    .leftAboutTitle {
+        font-size: 50px;
+    }
+    .leftAboutSubtitle {
+        font-size: 20px;
+    }
+    .rightAboutTitle {
+        @extend .textEnd;
+        display: block;
+        font-size: 30px;
+    }
+    .rightAboutSubtitle {
+        @extend .textEnd;
+        font-size: 15px;
+    }
+}
+//! END OF ABOUT
+
+//! KEY FEATURES
+.whiteColorKeyFeatures {
+    align-content: center;
+    .leftKeyFeaturesTitle {
+        font-size: 50px;
+    }
+    .leftKeyFeaturesSubtitle {
+        font-size: 20px;
+    }
+    .rightKeyFeaturesTitle {
+        @extend .textEnd;
+        display: block;
+        font-size: 30px;
+    }
+    .rightKeyFeaturesSubtitle {
+        @extend .textEnd;
+        font-size: 15px;
+    }
+}
+//! END OF KEY FEATURES
+
+//! COMPANY PROFILES
+.grayColorCompanyProfile {
+    background: #282828;
+    color: whitesmoke;
+    align-content: center;
+    .leftCompanyProfileTitle {
+        font-size: 20px;
+    }
+    .leftCompanyProfileSubtitle {
+        font-size: 16px;
+        .iconCompanyProfile {
+            font-size: 20px;
+        }
+    }
+    .rightCompanyProfileTitle {
+        @extend .textEnd;
+        display: block;
+        font-size: 20px;
+    }
+    .rightCompanyProfileSubtitle {
+        @extend .textEnd;
+        font-size: 16px;
+    }
+}
+//! END OF COMPANY PROFILES
+
 .containerStyle {
-    background: #fbfbd2;
+    background: whitesmoke;
 }
 
 .content {
@@ -141,6 +209,44 @@
         }
     }
 
+    .whiteColorAbout {
+        align-content: center;
+        .leftAboutTitle {
+            font-size: 40px
+        }
+        .leftAboutSubtitle {
+            font-size: 12px;
+        }
+        .rightAboutTitle {
+            @include textStart;
+            display: block;
+            font-size: 25px;
+        }
+        .rightAboutSubtitle {
+            @include textStart;
+            font-size: 12px;
+        }
+    }
+
+    .whiteColorKeyFeatures {
+        align-content: center;
+        .leftKeyFeaturesTitle {
+            font-size: 40px;
+        }
+        .leftKeyFeaturesSubtitle {
+            font-size: 12px;
+        }
+        .rightKeyFeaturesTitle {
+            @include textStart;
+            display: block;
+            font-size: 25px;
+        }
+        .rightKeyFeaturesSubtitle {
+            @include textStart;
+            font-size: 12px;
+        }
+    }
+
     .imgDescription {
         position: absolute;
         top: 0;
@@ -148,7 +254,7 @@
         left: 0;
         right: 0;
         background: rgba(29, 106, 154, 0.72);
-        color: #fff;
+        color: whitesmoke;
         visibility: hidden;
         opacity: 0;
         
