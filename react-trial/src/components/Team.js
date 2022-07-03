@@ -5,7 +5,7 @@ import product1 from '../assets/images/bricket.jpg';
 import product2 from '../assets/images/cocofibre.jpg';
 import product3 from '../assets/images/cocopeat.jpg';
 
-class Product extends React.Component {
+export default class Team extends React.Component {
     render() {
         return (
             <div>
@@ -52,5 +52,3 @@ class Product extends React.Component {
         );
     }
 }
-
-export default Product;

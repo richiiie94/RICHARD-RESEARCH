@@ -53,6 +53,14 @@
     text-align: end;
 }
 
+@mixin navbarBG {
+    background: #fbfbd2 !important;
+}
+
+.navbarBG {
+    @include navbarBG;
+}
+
 .mainNavbarTransparent {
     animation: fadeOut 500ms forwards;
     transition-property: background;
@@ -61,8 +69,8 @@
     background: transparent;
 }
 
-.mainNavbar {
-    background: #fbfbd2;
+.mainNavbar, .mainNavbar:hover, .mainNavbarTransparent:hover {
+    @extend .navbarBG;
 }
 
 .activeNavbar {
@@ -147,9 +155,8 @@
         /* transition effect. not necessary */
         transition: opacity .2s, visibility .2s;
     }   
-      
+    
     .imgWrap:hover {
-
         .imgDescription {
             visibility: visible;
             opacity: 1;

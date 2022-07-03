@@ -74,7 +74,7 @@ carousels.forEach((item, index) => {
         </div>
     );
 })
-class Product extends React.Component {
+export default class Product extends React.Component {
     render() {
         return (
             <div className="container-fluid" id="ProductApp">
@@ -117,5 +117,3 @@ class Product extends React.Component {
         );
     }
 }
-
-export default Product;

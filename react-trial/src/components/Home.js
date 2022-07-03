@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles.scss'
 import '../styles/LandingPage.scss'
 
-class Home extends React.Component {
+export default class Home extends React.Component {
     render() {
         return (
             <div id="HomeApp">
@@ -35,5 +35,3 @@ class Home extends React.Component {
         );
     }
 }
-
-export default Home;

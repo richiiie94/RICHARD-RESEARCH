@@ -2,12 +2,12 @@ import React from 'react';
 import '../styles.scss'
 import '../styles/LandingPage.scss'
 
-export default class About extends React.Component {
+export default class KeyFeatures extends React.Component {
     render() {
         return (
-            <div id="AboutApp">
+            <div id="KeyFeaturesApp">
                 <div className="container">
-                    <div className="row whiteColorHome">
+                    <div className="row whiteColorAbout">
                         <div className="col">
                             <div className="row leftHomeTitle">
                                 COCONUT
