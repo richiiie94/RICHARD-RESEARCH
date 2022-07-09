@@ -18,6 +18,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {imageURL: backgroundImage};
+    this.navigationBar = React.createRef();
     this.companyProfile = React.createRef();
   }
 
@@ -26,12 +27,23 @@ class App extends React.Component {
       imageURL: backgroundImage
     })
   }
+
+  scrollPosition = (position) => {
+    const btnBackToTop = document.getElementById("btn-back-to-top");
+    if (position < -50) {
+      btnBackToTop.style.display = "block";
+    }
+
+    if (position > -50) {
+      btnBackToTop.style.display = "none";
+    }
+  }
   
   render() {
     return (
       <div className="d-grid gap-3 containerStyle">
         <div className="parallaxBG" style={{backgroundImage: `url(${this.state['imageURL']})`}}>
-          <NavigationBar />
+          <NavigationBar scrollPositionFromNavigationBarComponent={this.scrollPosition} ref={this.navigationBar} />
           <Home />
         </div>
         {/* //! DESKTOP VERSION */}
@@ -56,7 +68,10 @@ class App extends React.Component {
         <button 
           type="button"
           className={`btn btn-primary rounded-circle`}
-          id="btn-back-to-top">
+          id="btn-back-to-top"
+          data-bs-toggle="tooltip"
+          title="Scroll to Top"
+          onClick={() => this.navigationBar.current.scrollToTop()}>
           <i class="bi bi-caret-up-fill" id="bi-back-to-top"></i>
         </button>
 

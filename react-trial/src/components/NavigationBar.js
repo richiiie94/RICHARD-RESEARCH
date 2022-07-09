@@ -41,11 +41,16 @@ export default class NavigationBar extends React.Component {
             navbarPos: document.body.getBoundingClientRect().top,
             showNavbar: document.body.getBoundingClientRect().top > this.state.navbarPos,
         })
+        this.props.scrollPositionFromNavigationBarComponent(document.body.getBoundingClientRect().top);
         
         const navbar_collapse = document.querySelector('.navbar-collapse');
         if (document.body.getBoundingClientRect().top !== this.state.navbarPos) {
             navbar_collapse.classList.remove('show');
         }
+    }
+
+    scrollToTop = () => {
+        window.scrollTo(0, 0);
     }
 
     render() {
