@@ -10,17 +10,20 @@ export default class About extends React.Component {
                     <div className="row whiteColorAbout">
                         <div className="col-sm-6 px-4 py-2 py-sm-4">
                             <div className="row leftAboutTitle">
-                                COCONUT
+                                About Us
                             </div>
                             <div className="row leftAboutSubtitle">
-                                <div className="row">
-                                    co·co·nut
+                                <div className="px-0">
+                                    Coco Commoss
                                 </div>
-                                <div className="row">
-                                    /ˈkōkəˌnət/
+                                <div className="px-0">
+                                    /ˈkōkəˌkəˈmäˈz/
                                 </div>
-                                <div className="row justifyText">
-                                    the large, oval, brown seed of a tropical palm, consisting of a hard shell lined with edible white flesh and containing a clear liquid. It grows inside a woody husk, surrounded by fiber.
+                                <div className="px-0 justifyText">
+                                    is a company which focuses on processed products from Indonesian coconut with the best quality.
+                                </div>
+                                <div className="px-0 justifyText">
+                                    Our Motto is "If our customers’ happy, we must be happy".
                                 </div>
                             </div>
                         </div>

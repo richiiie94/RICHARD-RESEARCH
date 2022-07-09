@@ -45,8 +45,12 @@
     @include textStart;
 }
 
-.textCenter {
+@mixin textCenter {
     text-align: center;
+}
+
+.textCenter {
+    @include textCenter;
 }
 
 .textEnd {
@@ -109,7 +113,7 @@
 .whiteColorAbout {
     align-content: center;
     .leftAboutTitle {
-        font-size: 50px;
+        font-size: 40px;
     }
     .leftAboutSubtitle {
         font-size: 20px;
@@ -127,7 +131,8 @@
 //! END OF ABOUT
 
 //! KEY FEATURES
-.whiteColorKeyFeatures {
+.grayColorKeyFeatures {
+    background: #dad9d9;
     align-content: center;
     .leftKeyFeaturesTitle {
         font-size: 50px;
@@ -157,18 +162,13 @@
     }
     .leftCompanyProfileSubtitle {
         font-size: 16px;
-        .iconCompanyProfile {
-            font-size: 20px;
+        .link-fb, .link-ig, .link-li {
+            word-spacing: 6px;
+            font-size: 16px;
+            .bi {
+                font-size: x-large;
+            }
         }
-    }
-    .rightCompanyProfileTitle {
-        @extend .textEnd;
-        display: block;
-        font-size: 20px;
-    }
-    .rightCompanyProfileSubtitle {
-        @extend .textEnd;
-        font-size: 16px;
     }
 }
 //! END OF COMPANY PROFILES
@@ -186,14 +186,73 @@
     margin-top: -100px;
 }
 
+#btn-back-to-top {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 90px;
+    right: 20px;
+    opacity: 50%;
+    z-index: 2;
+    display: none;
+}
+
+#bi-back-to-top::before {
+    font-size: x-large;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+#btn-whatsapp {
+    background: #25d366 !important;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    &:focus {
+        box-shadow:  0 0 0.5rem rgb(37, 211, 102, 1) !important;
+    }
+}
+
+#btn-whatsapp:active {
+    background-color: #25d366; 
+}
+
+#bi-whatsapp::before {
+    font-size: x-large;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.link-fb:hover {
+    color: #1b74e4;
+    cursor: pointer;
+}
+
+.link-ig:hover {
+    background-image: linear-gradient(45deg, #fdf497 0%, #fdf497 5%, #fd5949 15%,#d6249f 20%,#285AEB 40%);
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+
+.link-li:hover {
+    color: #0a66c2;
+    cursor: pointer;
+}
+
 @media (max-width: 575.98px) {
+    //! HOME
     .whiteColorHome {
         color: whitesmoke;
         text-shadow: 2px 2px 4px black;
         height: 100vh;
         align-content: center;
         .leftHomeTitle {
-            font-size: 40px
+            @include textCenter;
+            font-size: 40px;
         }
         .leftHomeSubtitle {
             font-size: 12px;
@@ -209,10 +268,11 @@
         }
     }
 
+    //! ABOUT
     .whiteColorAbout {
         align-content: center;
         .leftAboutTitle {
-            font-size: 40px
+            font-size: 25px
         }
         .leftAboutSubtitle {
             font-size: 12px;
@@ -228,7 +288,9 @@
         }
     }
 
-    .whiteColorKeyFeatures {
+    //! KEYFEATURES
+    .grayColorKeyFeatures {
+        background: #dad9d9;
         align-content: center;
         .leftKeyFeaturesTitle {
             font-size: 40px;
@@ -244,6 +306,29 @@
         .rightKeyFeaturesSubtitle {
             @include textStart;
             font-size: 12px;
+        }
+    }
+
+    //! COMPANY PROFILE
+    .grayColorCompanyProfile {
+        background: #282828;
+        color: whitesmoke;
+        align-content: center;
+        .leftCompanyProfileTitle {
+            font-size: 20px;
+        }
+        .leftCompanyProfileSubtitle {
+            font-size: 14px !important;
+            .link-fb, .link-ig, .link-li {
+                .bi {
+                    font-size: medium;
+                }
+                word-spacing: 6px;
+                font-size: 14px !important;
+            }
+        }
+        .footer-rights {
+            font-size: 14px;
         }
     }
 
@@ -268,28 +353,35 @@
             opacity: 1;
         }
     }
-}
 
-.link-fb, .link-ig, .link-li {
-    word-spacing: 6px;
-}
+    #btn-back-to-top {
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        bottom: 55px;
+        right: 10px;
+        // display: none;
+    }
+    
+    #bi-back-to-top::before {
+        font-size: medium;
+        font-weight: bold;
+        color: whitesmoke;
+    }
 
-.link-fb:hover {
-    color: #1b74e4;
-    cursor: pointer;
-}
-
-.link-ig:hover {
-    // background: -webkit-linear-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: -webkit-linear-gradient(45deg, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-    background-image: linear-gradient(45deg, #fdf497 0%, #fdf497 5%, #fd5949 15%,#d6249f 20%,#285AEB 40%);
-    background-clip: text;
-    color: transparent;
-    cursor: pointer;
-}
-
-.link-li:hover {
-    color: #0a66c2;
-    cursor: pointer;
+    #btn-whatsapp {
+        background: #25d366 !important;
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        bottom: 10px;
+        right: 10px;
+        &:focus {
+            box-shadow:  0 0 0.5rem rgb(37, 211, 102, 1) !important;
+        }
+    }
+    
+    #bi-whatsapp::before {
+        font-size: medium;
+    }
 }

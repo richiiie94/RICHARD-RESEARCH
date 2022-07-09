@@ -10,14 +10,15 @@ import About from './components/About';
 import Product from './components/Product';
 import KeyFeatures from './components/KeyFeatures';
 import Team from './components/Team';
-import CompanyProfile from './components/CompanyProfile';
 
+import CompanyProfile from './components/CompanyProfile';
 import backgroundImage from './assets/images/coconut.jpg';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {imageURL: backgroundImage};
+    this.companyProfile = React.createRef();
   }
 
   handleImageChange() {
@@ -49,8 +50,23 @@ class App extends React.Component {
         </div>
 
         <div className="content">
-          <CompanyProfile />
+          <CompanyProfile ref={this.companyProfile} />
         </div>
+
+        <button 
+          type="button"
+          className={`btn btn-primary rounded-circle`}
+          id="btn-back-to-top">
+          <i class="bi bi-caret-up-fill" id="bi-back-to-top"></i>
+        </button>
+
+        <button 
+          type="button"
+          className="btn rounded-circle"
+          id="btn-whatsapp"
+          onClick={() => this.companyProfile.current.openWindow('https://www.whatsapp.com')}>
+          <i class="bi bi-whatsapp" id="bi-whatsapp"></i>
+        </button>
       </div>
     );
   }

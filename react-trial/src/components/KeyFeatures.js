@@ -5,9 +5,9 @@ import '../styles/LandingPage.scss'
 export default class KeyFeatures extends React.Component {
     render() {
         return (
-            <div id="KeyFeaturesApp">
+            <div id="KeyFeaturesApp" className="grayColorKeyFeatures">
                 <div className="container">
-                    <div className="row whiteColorKeyFeatures">
+                    <div className="row">
                         <div className="col-sm-6 px-4 py-2 py-sm-4">
                             <div className="row leftKeyFeaturesTitle">
                                 COCONUT
@@ -35,7 +35,7 @@ export default class KeyFeatures extends React.Component {
                         </div>
                     </div>
 
-                    <div className="row whiteColorKeyFeatures">
+                    <div className="row">
                         <div className="col-sm-6 px-4 py-2 py-sm-4">
                             <div className="row leftKeyFeaturesTitle">
                                 COCONUT
