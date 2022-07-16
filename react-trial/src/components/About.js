@@ -5,7 +5,7 @@ import '../styles/LandingPage.scss'
 export default class About extends React.Component {
     render() {
         return (
-            <div id="AboutApp">
+            <div id="AboutDesktopApp">
                 <div className="container">
                     <div className="row whiteColorAbout">
                         <div className="col-sm-6 px-4 py-2 py-sm-4">
@@ -14,7 +14,7 @@ export default class About extends React.Component {
                             </div>
                             <div className="row leftAboutSubtitle">
                                 <div className="px-0">
-                                    Coco Commoss
+                                    Coco Fortunes
                                 </div>
                                 <div className="px-0">
                                     /ˈkōkəˌkəˈmäˈz/

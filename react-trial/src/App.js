@@ -41,17 +41,18 @@ class App extends React.Component {
   
   render() {
     return (
-      <div className="d-grid gap-3 containerStyle">
+      <div className="d-grid gap-lg-3 containerStyle">
         <div className="parallaxBG" style={{backgroundImage: `url(${this.state['imageURL']})`}}>
           <NavigationBar scrollPositionFromNavigationBarComponent={this.scrollPosition} ref={this.navigationBar} />
           <Home />
         </div>
+
         {/* //! DESKTOP VERSION */}
         <div className="d-none d-sm-block container content contentSpecial">
           <About />
         </div>
         {/* //! MOBILE VERSION */}
-        <div className="d-block d-sm-none content contentSpecial">
+        <div id="AboutApp" className="d-block d-sm-none content contentSpecial">
           <About />
         </div>
 
@@ -72,7 +73,7 @@ class App extends React.Component {
           data-bs-toggle="tooltip"
           title="Scroll to Top"
           onClick={() => this.navigationBar.current.scrollToTop()}>
-          <i class="bi bi-caret-up-fill" id="bi-back-to-top"></i>
+          <i className="bi bi-caret-up-fill" id="bi-back-to-top"></i>
         </button>
 
         <button 
@@ -80,7 +81,7 @@ class App extends React.Component {
           className="btn rounded-circle"
           id="btn-whatsapp"
           onClick={() => this.companyProfile.current.openWindow('https://www.whatsapp.com')}>
-          <i class="bi bi-whatsapp" id="bi-whatsapp"></i>
+          <i className="bi bi-whatsapp" id="bi-whatsapp"></i>
         </button>
       </div>
     );

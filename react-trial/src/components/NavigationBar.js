@@ -70,7 +70,12 @@ export default class NavigationBar extends React.Component {
                                     <a className="nav-link active" aria-current="page" href={`#${this.home}App`}>{this.home}</a>
                                 </li>
 
-                                <li className="nav-item">
+                                {/* //! DESKTOP VERSION */}
+                                <li className="d-none d-sm-block nav-item">
+                                    <a className="nav-link active" href={`#${this.about}DesktopApp`}>{this.about}</a>
+                                </li>
+                                {/* //! MOBILE VERSION */}
+                                <li className="d-block d-sm-none nav-item">
                                     <a className="nav-link active" href={`#${this.about}App`}>{this.about}</a>
                                 </li>
 

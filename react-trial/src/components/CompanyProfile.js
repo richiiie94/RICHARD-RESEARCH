@@ -32,7 +32,7 @@ export default class CompanyProfile extends React.Component {
                                 <div id={`link-ig-compro`} className="link-ig" onClick={() => this.openWindow('https://www.instagram.com')}>
                                     <i className="bi bi-instagram"></i> Instagram
                                 </div>
-                                <div id={`link-li-compro`} class="link-li" onClick={() => this.openWindow('https://www.linkedin.com')}>
+                                <div id={`link-li-compro`} className="link-li" onClick={() => this.openWindow('https://www.linkedin.com')}>
                                     <i className="bi bi-linkedin"></i> LinkedIn
                                 </div>
                             </div>
@@ -41,7 +41,7 @@ export default class CompanyProfile extends React.Component {
 
                     <div className="row px-4 py-2">
                         <div className="col px-4 py-2 text-center border-top footer-rights">
-                            © Coco Commoss. All rights reserved.
+                            © Coco Fortunes. All rights reserved.
                         </div>
                     </div>
                 </div>
