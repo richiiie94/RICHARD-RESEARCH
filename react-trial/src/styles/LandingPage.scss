@@ -173,6 +173,17 @@
 }
 //! END OF KEY FEATURES
 
+//! PRODUCTS
+.descriptionProduct {
+    @extend .greenLeafColor;
+    font-size: 25px;
+}
+
+.specificationProduct {
+    font-size: 16px;
+}
+//! END OF PRODUCTS
+
 //! COMPANY PROFILES
 .grayColorCompanyProfile {
     background: #282828;
@@ -311,15 +322,24 @@
         }
     }
 
-    //! KEYFEATURES
+    //! KEY FEATURES
     .grayColorKeyFeatures {
         background: #dad9d9;
         align-content: center;
         .leftKeyFeaturesTitle {
             @include greenLeafColor;
-            font-size: 40px;
+            @include textCenter;
+            font-size: 25px;
         }
-        .leftKeyFeaturesSubtitle {
+        .leftKeyFeaturesSubtitle1 {
+            @include greenLeafColor;
+            font-size: 18px;
+        }
+        .leftKeyFeaturesSubtitle2 {
+            @include greenLeafColor;
+            font-size: 12px;
+        }
+        .leftKeyFeaturesSubtitle3 {
             font-size: 12px;
         }
         .rightKeyFeaturesTitle {
@@ -363,10 +383,12 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background: rgba(29, 106, 154, 0.72);
-        color: whitesmoke;
+        padding: 10px 0px;
+        background: whitesmoke;
+        @include greenLeafColor;
         visibility: hidden;
         opacity: 0;
+        font-size: 20px;
         
         /* transition effect. not necessary */
         transition: opacity .2s, visibility .2s;
@@ -375,7 +397,7 @@
     .imgWrap:hover {
         .imgDescription {
             visibility: visible;
-            opacity: 1;
+            opacity: 0.8;
         }
     }
 

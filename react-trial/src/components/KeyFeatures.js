@@ -9,7 +9,7 @@ export default class KeyFeatures extends React.Component {
                 <div className="container">
                     <div className="col">
                         <div className="col px-4 py-2 py-sm-4">
-                            <div className="row leftKeyFeaturesTitle">
+                            <div className="row-auto leftKeyFeaturesTitle">
                                 Our Key Value (F-I-N-E)
                             </div>
                         </div>
@@ -22,11 +22,11 @@ export default class KeyFeatures extends React.Component {
                                             F 
                                         </div>
                                         <div className="col-auto align-self-center leftKeyFeaturesSubtitle2">
-                                            Focus on Customer
+                                            Focus
                                         </div>
                                     </div>
-                                    <div className="row justify-content-center leftKeyFeaturesSubtitle3">
-                                        Customer is our top priority.
+                                    <div className="row-auto text-center leftKeyFeaturesSubtitle3">
+                                        Focus on Customer. Customer is our top priority.
                                     </div>
                                 </div>
                             </div>
@@ -41,7 +41,7 @@ export default class KeyFeatures extends React.Component {
                                             Integrity
                                         </div>
                                     </div>
-                                    <div className="row text-center leftKeyFeaturesSubtitle3">
+                                    <div className="row-auto text-center leftKeyFeaturesSubtitle3">
                                         The foundation and culture of our work. We are honest, transparent & commited to do the best for our customers.
                                     </div>
                                 </div>
@@ -59,7 +59,7 @@ export default class KeyFeatures extends React.Component {
                                             Nature / Nimble
                                         </div>
                                     </div>
-                                    <div className="row text-center leftKeyFeaturesSubtitle3">
+                                    <div className="row-auto text-center leftKeyFeaturesSubtitle3">
                                         Everything must be friendly to nature / Our team is committed to respond as soon as possible.
                                     </div>
                                 </div>
@@ -75,7 +75,7 @@ export default class KeyFeatures extends React.Component {
                                             Excellence
                                         </div>
                                     </div>
-                                    <div className="row text-center leftKeyFeaturesSubtitle3">
+                                    <div className="row-auto text-center leftKeyFeaturesSubtitle3">
                                         The quality of being outstanding or extremely good. Strive to excellence.
                                     </div>
                                 </div>

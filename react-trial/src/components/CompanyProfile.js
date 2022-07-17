@@ -14,7 +14,7 @@ export default class CompanyProfile extends React.Component {
                     <div className="container-fluid row gap-lg-4 py-4">
                         <div className="col-sm-6 col-lg-4 px-4 py-2 py-sm-4">
                             <div className="row mb-2 leftCompanyProfileTitle"> 
-                                COCONUT COMMODITIES
+                                Coco Fortune
                             </div>
                             <div className="row leftCompanyProfileSubtitle lh-lg">
                                 We provide the best coconut commodities into some products from Indonesia.
@@ -32,8 +32,8 @@ export default class CompanyProfile extends React.Component {
                                 <div id={`link-ig-compro`} className="link-ig" onClick={() => this.openWindow('https://www.instagram.com')}>
                                     <i className="bi bi-instagram"></i> Instagram
                                 </div>
-                                <div id={`link-li-compro`} className="link-li" onClick={() => this.openWindow('https://www.linkedin.com')}>
-                                    <i className="bi bi-linkedin"></i> LinkedIn
+                                <div id={`link-li-compro`} className="link-li" onClick={() => this.openWindow('mailto:test@example.com')}>
+                                    <i className="bi bi-envelope"></i> E-mail
                                 </div>
                             </div>
                         </div>
@@ -41,7 +41,7 @@ export default class CompanyProfile extends React.Component {
 
                     <div className="row px-4 py-2">
                         <div className="col px-4 py-2 text-center border-top footer-rights">
-                            © Coco Fortunes. All rights reserved.
+                            © Coco Fortune. All rights reserved.
                         </div>
                     </div>
                 </div>

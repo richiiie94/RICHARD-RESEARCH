@@ -8,18 +8,21 @@ import product3 from '../assets/images/cocopeat.jpg';
 const carousels = [
     {
         img: product1,
-        name: 'product1',
-        description: 'Ini Product 1',
+        name: 'coconut_charcoal_briquettes',
+        description: 'Coconut Charcoal Briquettes',
+        specification: '',
     },
     {
         img: product2,
-        name: 'product2',
-        description: 'Ini Product 2',
+        name: 'coconut_oil',
+        description: 'Coconut Oil',
+        specification: '',
     },
     {
         img: product3,
-        name: 'product3',
-        description: 'Ini Product 3',
+        name: 'coconut_fibre',
+        description: 'Coconut Fibre',
+        specification: '',
     },
 ];
 const carouselsElement = [];
@@ -45,8 +48,14 @@ carousels.forEach((item, index) => {
                     <img src={item['img']} className="d-block w-100" alt={item['name']} />
                 </div>
 
-                <div className="col d-flex align-items-center">
-                    {item['description']}
+                <div className="col py-3">
+                    <div className="col text-center descriptionProduct">
+                        {item['description']}
+                    </div>
+
+                    <div className="col specificationProduct">
+                        {item['specification']}
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,7 +76,7 @@ carousels.forEach((item, index) => {
             <div className="row imgWrap">
                 <img src={item['img']} className="d-block w-100" alt={item['name']} />
 
-                <div className="container imgDescription">
+                <div className="container text-center imgDescription">
                     {item['description']}
                 </div>
             </div>
