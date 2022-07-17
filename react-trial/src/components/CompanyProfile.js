@@ -41,7 +41,7 @@ export default class CompanyProfile extends React.Component {
 
                     <div className="row px-4 py-2">
                         <div className="col px-4 py-2 text-center border-top footer-rights">
-                            © Coco Fortune. All rights reserved.
+                            © {new Date().getFullYear()} Coco Fortune. All rights reserved.
                         </div>
                     </div>
                 </div>

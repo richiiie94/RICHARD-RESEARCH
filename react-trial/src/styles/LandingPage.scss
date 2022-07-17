@@ -147,6 +147,7 @@
     align-content: center;
     .leftKeyFeaturesTitle {
         @extend .greenLeafColor;
+        @extend .textCenter;
         font-size: 40px;
     }
     .leftKeyFeaturesSubtitle1 {
