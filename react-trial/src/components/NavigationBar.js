@@ -58,31 +58,45 @@ export default class NavigationBar extends React.Component {
             <div>
                 <nav className={`navbar fixed-top navbar-expand-lg navbar-light ${this.state.navbarPos === 0 ? 'mainNavbarTransparent' : 'mainNavbar'} ${this.state.showNavbar ? 'activeNavbar' : 'hiddenNavbar'}`}>
                     <div className="container-fluid mainNavbarDiv">
-                        <a className="navbar-brand" href="#HomeApp">Navbar</a>
+                        <a className="navbar-brand" href="#HomeApp">Coco Fortune</a>
 
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onClick={this.navbarBGChange}>
                             <span className="navbar-toggler-icon"></span>
                         </button>
 
                         <div className="collapse navbar-collapse mainNavbarCollapse" id="navbarSupportedContent">
-                            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                            {/* //! DESKTOP VERSION */}
+                            <ul className="navbar-nav d-none d-sm-flex ms-auto mb-2 mb-lg-0">
+                                <li className="nav-item">
+                                    <a className="nav-link active" aria-current="page" href={`#${this.home}App`} data-bs-toggle="tooltip" title={this.home}>
+                                        <i className="bi bi-house-door-fill"></i>
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link active" href={`#${this.about}DesktopApp`} data-bs-toggle="tooltip" title={this.about}>
+                                        <i className="bi bi-info-square-fill"></i>
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link active" href={`#${this.product}App`} data-bs-toggle="tooltip" title={this.product}>
+                                        <i className="bi bi-box2-fill"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            {/* //! MOBILE VERSION */}
+                            <ul className="navbar-nav d-flex d-sm-none ms-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
                                     <a className="nav-link active" aria-current="page" href={`#${this.home}App`}>{this.home}</a>
                                 </li>
-
-                                {/* //! DESKTOP VERSION */}
-                                <li className="d-none d-sm-block nav-item">
-                                    <a className="nav-link active" href={`#${this.about}DesktopApp`}>{this.about}</a>
-                                </li>
-                                {/* //! MOBILE VERSION */}
                                 <li className="d-block d-sm-none nav-item">
                                     <a className="nav-link active" href={`#${this.about}App`}>{this.about}</a>
                                 </li>
-
                                 <li className="nav-item">
                                     <a className="nav-link active" href={`#${this.product}App`}>{this.product}</a>
                                 </li>
                             </ul>
+                            
                         </div>
                     </div>
                 </nav>

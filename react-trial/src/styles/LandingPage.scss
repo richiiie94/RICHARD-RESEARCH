@@ -20,6 +20,14 @@
     }
 }
 
+@mixin greenLeafColor {
+    color: #338e4f;
+}
+
+.greenLeafColor {
+    @include greenLeafColor;
+}
+
 .parallaxBG {
     background: #000;
     background: linear-gradient(
@@ -113,12 +121,14 @@
 .whiteColorAbout {
     align-content: center;
     .leftAboutTitle {
+        @extend .greenLeafColor;
         font-size: 40px;
     }
     .leftAboutSubtitle {
         font-size: 20px;
     }
     .rightAboutTitle {
+        @extend .greenLeafColor;
         @extend .textEnd;
         display: block;
         font-size: 40px;
@@ -136,12 +146,22 @@
     background: #dad9d9;
     align-content: center;
     .leftKeyFeaturesTitle {
-        font-size: 50px;
+        @extend .greenLeafColor;
+        font-size: 40px;
     }
-    .leftKeyFeaturesSubtitle {
+    .leftKeyFeaturesSubtitle1 {
+        @extend .greenLeafColor;
+        font-size: 30px;
+    }
+    .leftKeyFeaturesSubtitle2 {
+        @extend .greenLeafColor;
+        font-size: 20px;
+    }
+    .leftKeyFeaturesSubtitle3 {
         font-size: 20px;
     }
     .rightKeyFeaturesTitle {
+        @extend .greenLeafColor;
         @extend .textEnd;
         display: block;
         font-size: 30px;
@@ -184,7 +204,7 @@
 }
 
 .contentSpecial {
-    margin-top: -100px;
+    margin-top: 0px;
 }
 
 #btn-back-to-top {
@@ -245,10 +265,6 @@
 }
 
 @media (max-width: 575.98px) {
-    .contentSpecial {
-        margin-top: 0px;
-    }
-
     //! HOME
     .whiteColorHome {
         color: whitesmoke;
@@ -277,12 +293,14 @@
     .whiteColorAbout {
         align-content: center;
         .leftAboutTitle {
+            @include greenLeafColor;
             font-size: 25px
         }
         .leftAboutSubtitle {
             font-size: 12px;
         }
         .rightAboutTitle {
+            @include greenLeafColor;
             @include textStart;
             display: block;
             font-size: 25px;
@@ -298,12 +316,14 @@
         background: #dad9d9;
         align-content: center;
         .leftKeyFeaturesTitle {
+            @include greenLeafColor;
             font-size: 40px;
         }
         .leftKeyFeaturesSubtitle {
             font-size: 12px;
         }
         .rightKeyFeaturesTitle {
+            @include greenLeafColor;
             @include textStart;
             display: block;
             font-size: 25px;
