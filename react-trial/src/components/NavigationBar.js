@@ -19,7 +19,7 @@ export default class NavigationBar extends React.Component {
 
     navbarBGChange = () => {
         const navbar = document.querySelector('.navbar');
-        this.setState.clickCount = this.state.clickCount++;
+        this.setState.clickCount = this.state.clickCount + 1;
 
         if (this.state.clickCount % 2 === 1) {
             navbar.classList.add('navbarBG');
@@ -58,7 +58,7 @@ export default class NavigationBar extends React.Component {
             <div>
                 <nav className={`navbar fixed-top navbar-expand-lg navbar-light ${this.state.navbarPos === 0 ? 'mainNavbarTransparent' : 'mainNavbar'} ${this.state.showNavbar ? 'activeNavbar' : 'hiddenNavbar'}`}>
                     <div className="container-fluid mainNavbarDiv">
-                        <a className="navbar-brand" href="#">Navbar</a>
+                        <a className="navbar-brand" href="#HomeApp">Navbar</a>
 
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onClick={this.navbarBGChange}>
                             <span className="navbar-toggler-icon"></span>

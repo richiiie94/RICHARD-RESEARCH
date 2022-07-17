@@ -121,11 +121,12 @@
     .rightAboutTitle {
         @extend .textEnd;
         display: block;
-        font-size: 30px;
+        font-size: 40px;
     }
     .rightAboutSubtitle {
         @extend .textEnd;
-        font-size: 15px;
+        display: block;
+        font-size: 20px;
     }
 }
 //! END OF ABOUT

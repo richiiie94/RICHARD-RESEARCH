@@ -9,18 +9,22 @@ export default class About extends React.Component {
                 <div className="container">
                     <div className="row whiteColorAbout">
                         <div className="col-sm-6 px-4 py-2 py-sm-4">
-                            <div className="row leftAboutTitle">
+                            <div className="row leftAboutTitle px-sm-0 mb-lg-3 mb-sm-1">
                                 About Us
                             </div>
-                            <div className="row leftAboutSubtitle">
+                            <div className="row gap-lg-2 leftAboutSubtitle pr-sm-0">
                                 <div className="px-0">
-                                    Coco Fortunes
+                                    Coco Fortune
                                 </div>
                                 <div className="px-0">
-                                    /ˈkōkəˌkəˈmäˈz/
+                                    /'kōkō fôrCHən/
                                 </div>
                                 <div className="px-0 justifyText">
-                                    is a company which focuses on processed products from Indonesian coconut with the best quality.
+                                    Coco Fortune is an Indonesian company engaged in the export of various variants of coconut products.
+                                    One of our main product is coconut charcoal briquette for Shisha.
+                                    We keep to build and develop networks with farmers in every coconut plantation that we manage, especially in West Borneo.
+                                    In addition, we also have partners with many other coconut farmers from East Java.
+                                    And we always make sure that our products availability and the best quality.
                                 </div>
                                 <div className="px-0 justifyText">
                                     Our Motto is "If our customers’ happy, we must be happy".
@@ -29,11 +33,30 @@ export default class About extends React.Component {
                         </div>
 
                         <div className="col-sm-6 px-4 py-2 py-sm-4">
-                            <div className="row rightAboutTitle">
-                                LOREM IPSUM
-                            </div>
-                            <div className="row rightAboutSubtitle justifyText">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            <div className="row justify-content-center">
+                                <div className="mb-4">
+                                    <div className="row rightAboutTitle mb-lg-2 mb-sm-1">
+                                        Our Vision
+                                    </div>
+                                    <div className="row rightAboutSubtitle justifyText">
+                                        become one of the best Indonesian coconut exporter in the world.                   
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div className="row rightAboutTitle mb-lg-2 mb-sm-1">
+                                        Our Mission
+                                    </div>
+                                    <div className="row rightAboutSubtitle justifyText">
+                                        1. Provide the best and responsive service experience  
+                                    </div>
+                                    <div className="row rightAboutSubtitle justifyText">
+                                        2. Keep the quality of the products provided     
+                                    </div>
+                                    <div className="row rightAboutSubtitle justifyText">
+                                        3. Build business relationships with commitment and trust oriented           
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

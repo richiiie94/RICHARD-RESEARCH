@@ -9,7 +9,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Product from './components/Product';
 import KeyFeatures from './components/KeyFeatures';
-import Team from './components/Team';
+// import Team from './components/Team';
 
 import CompanyProfile from './components/CompanyProfile';
 import backgroundImage from './assets/images/coconut.jpg';
