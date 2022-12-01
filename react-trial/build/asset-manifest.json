@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cf23a6cb.css",
+    "main.js": "/static/js/main.7f0da101.js",
+    "static/js/787.03320622.chunk.js": "/static/js/787.03320622.chunk.js",
+    "static/media/coco_fibre.png": "/static/media/coco_fibre.423b55e596ce9affef18.png",
+    "static/media/coco_peat.png": "/static/media/coco_peat.a75fe0722f51e164ab91.png",
+    "static/media/coconut.jpg": "/static/media/coconut.439818e356c8e01d2752.jpg",
+    "static/media/briquette.png": "/static/media/briquette.3fd799a1485ef19a9502.png",
+    "static/media/desiccated_coconut.png": "/static/media/desiccated_coconut.35608079f03dbb1873ec.png",
+    "static/media/copra.png": "/static/media/copra.b09586bb17890247b1e3.png",
+    "static/media/virgin_coconut_oil.png": "/static/media/virgin_coconut_oil.f98352b35c9f629ecae2.png",
+    "static/media/MeriendaOne-Regular.ttf": "/static/media/MeriendaOne-Regular.c1220afcf0cceab9bd8b.ttf",
+    "index.html": "/index.html",
+    "main.cf23a6cb.css.map": "/static/css/main.cf23a6cb.css.map",
+    "main.7f0da101.js.map": "/static/js/main.7f0da101.js.map",
+    "787.03320622.chunk.js.map": "/static/js/787.03320622.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf23a6cb.css",
+    "static/js/main.7f0da101.js"
+  ]
+}
