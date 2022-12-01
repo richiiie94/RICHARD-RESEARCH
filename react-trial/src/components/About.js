@@ -7,7 +7,7 @@ export default class About extends React.Component {
         return (
             <div id="AboutDesktopApp">
                 <div className="container">
-                    <div className="row whiteColorAbout">
+                    <div className="row whiteColorAbout pb-lg-4">
                         <div className="col-sm-6 px-4 py-2 py-sm-4">
                             <div className="row leftAboutTitle px-sm-0 mb-lg-3 mb-sm-1">
                                 About Us
@@ -43,7 +43,7 @@ export default class About extends React.Component {
                                     </div>
                                 </div>
 
-                                <div>
+                                <div className="pb-sm-2">
                                     <div className="row rightAboutTitle mb-lg-2 mb-sm-1">
                                         Our Mission
                                     </div>

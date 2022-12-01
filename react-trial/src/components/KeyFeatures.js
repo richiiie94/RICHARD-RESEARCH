@@ -7,7 +7,7 @@ export default class KeyFeatures extends React.Component {
         return (
             <div id="KeyFeaturesApp" className="grayColorKeyFeatures">
                 <div className="container">
-                    <div className="col">
+                    <div className="col pb-3">
                         <div className="col px-4 py-2 py-sm-4">
                             <div className="row-auto leftKeyFeaturesTitle">
                                 Our Key Value (F-I-N-E)
