@@ -1,0 +1,13 @@
+// !ADD CUSTOM STYLE BEFORE IMPORT BOOTSTRAP
+// $body-bg: #000;
+
+// @import '~bootstrap/scss/bootstrap.scss';
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@font-face {
+    font-family: "Merienda-One";
+    src: local("Merienda-One"), url(./assets/font/MeriendaOne-Regular.ttf) format("truetype");
+}
