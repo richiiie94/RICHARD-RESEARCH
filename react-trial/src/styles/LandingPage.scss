@@ -1,0 +1,464 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+@mixin greenLeafColor {
+    color: #338e4f;
+}
+
+.greenLeafColor {
+    @include greenLeafColor;
+}
+
+.parallaxBG {
+    background: #000;
+    background: linear-gradient(
+        rgba(0, 0 ,0, 0.3),
+        rgba(0, 0, 0, 0.8),
+    );
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.justifyText {
+    text-align: justify;
+}
+
+@mixin textStart {
+    text-align: start;
+    text-align: justify;
+}
+
+.textStart {
+    @include textStart;
+}
+
+@mixin textCenter {
+    text-align: center;
+}
+
+.textCenter {
+    @include textCenter;
+}
+
+.textEnd {
+    text-align: end;
+}
+
+@mixin navbarBG {
+    background: whitesmoke !important;
+}
+
+.navbarBG {
+    @include navbarBG;
+}
+
+.mainNavbarTransparent {
+    animation: fadeOut 500ms forwards;
+    transition-property: background;
+    transition-duration: 500ms;
+    transition-delay: 500ms;
+    background: transparent;
+}
+
+.mainNavbar, .mainNavbar:hover, .mainNavbarTransparent:hover {
+    @extend .navbarBG;
+}
+
+.activeNavbar {
+    animation: fadeIn 500ms forwards;
+}
+
+.hiddenNavbar {
+    animation: fadeOut 500ms forwards;
+}
+
+//! HOME
+.whiteColorHome {
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px black;
+    height: 100vh;
+    align-content: center;
+    .leftHomeTitle {
+        font-size: 50px;
+    }
+    .leftHomeSubtitle {
+        font-size: 20px;
+    }
+    .rightHomeTitle {
+        @extend .textEnd;
+        display: block;
+        font-size: 30px;
+    }
+    .rightHomeSubtitle {
+        @extend .textEnd;
+        font-size: 15px;
+    }
+}
+//! END OF HOME
+
+//! ABOUT
+.whiteColorAbout {
+    align-content: center;
+    .leftAboutTitle {
+        @extend .greenLeafColor;
+        font-size: 40px;
+    }
+    .leftAboutSubtitle {
+        font-size: 20px;
+    }
+    .rightAboutTitle {
+        @extend .greenLeafColor;
+        @extend .textEnd;
+        display: block;
+        font-size: 40px;
+    }
+    .rightAboutSubtitle {
+        @extend .textEnd;
+        display: block;
+        font-size: 20px;
+    }
+}
+//! END OF ABOUT
+
+//! KEY FEATURES
+.grayColorKeyFeatures {
+    background: #dad9d9;
+    align-content: center;
+    .leftKeyFeaturesTitle {
+        @extend .greenLeafColor;
+        @extend .textCenter;
+        font-size: 40px;
+    }
+    .leftKeyFeaturesSubtitle1 {
+        @extend .greenLeafColor;
+        font-size: 30px;
+    }
+    .leftKeyFeaturesSubtitle2 {
+        @extend .greenLeafColor;
+        font-size: 20px;
+    }
+    .leftKeyFeaturesSubtitle3 {
+        font-size: 20px;
+    }
+    .rightKeyFeaturesTitle {
+        @extend .greenLeafColor;
+        @extend .textEnd;
+        display: block;
+        font-size: 30px;
+    }
+    .rightKeyFeaturesSubtitle {
+        @extend .textEnd;
+        font-size: 15px;
+    }
+}
+//! END OF KEY FEATURES
+
+#carouselProductDesktop { 
+    .carousel-inner {
+        height: 500px !important;
+    }
+}
+
+.productsTitle {
+    @extend .greenLeafColor;
+    @extend .textCenter;
+    font-size: 40px;
+}
+
+//! PRODUCTS
+.descriptionProduct {
+    @extend .greenLeafColor;
+    font-size: 25px;
+}
+
+.specificationProduct {
+    font-size: 16px;
+    white-space: pre-line;
+    line-height: 3;
+    text-align: center;
+    margin: 12px 0px;
+}
+//! END OF PRODUCTS
+
+//! COMPANY PROFILES
+.grayColorCompanyProfile {
+    background: #282828;
+    color: whitesmoke;
+    align-content: center;
+    .leftCompanyProfileTitle {
+        font-size: 20px;
+    }
+    .leftCompanyProfileSubtitle {
+        font-size: 16px;
+        .link-fb, .link-ig, .link-li {
+            word-spacing: 6px;
+            font-size: 16px;
+            .bi {
+                font-size: x-large;
+            }
+        }
+    }
+}
+//! END OF COMPANY PROFILES
+
+.containerStyle {
+    background: whitesmoke;
+}
+
+.content {
+    box-shadow: 0 0 20px -6px rgba(0, 0 ,0, 0.2);
+    background: whitesmoke;
+}
+
+.contentSpecial {
+    margin-top: 0px;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 90px;
+    right: 20px;
+    opacity: 50%;
+    z-index: 2;
+    display: none;
+}
+
+#bi-back-to-top::before {
+    font-size: x-large;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+#btn-whatsapp {
+    background: #25d366 !important;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    &:focus {
+        box-shadow:  0 0 0.5rem rgb(37, 211, 102, 1) !important;
+    }
+}
+
+#btn-whatsapp:active {
+    background-color: #25d366; 
+}
+
+#bi-whatsapp::before {
+    font-size: x-large;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.link-fb:hover {
+    color: #1b74e4;
+    cursor: pointer;
+}
+
+.link-ig:hover {
+    background-image: linear-gradient(45deg, #fdf497 0%, #fdf497 5%, #fd5949 15%,#d6249f 20%,#285AEB 40%);
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+
+.link-li:hover {
+    color: #0a66c2;
+    cursor: pointer;
+}
+
+@media (max-width: 575.98px) {
+    //! HOME
+    .whiteColorHome {
+        color: whitesmoke;
+        text-shadow: 2px 2px 4px black;
+        height: 100vh;
+        align-content: center;
+        .leftHomeTitle {
+            @include textCenter;
+            font-size: 40px;
+        }
+        .leftHomeSubtitle {
+            font-size: 12px;
+        }
+        .rightHomeTitle {
+            @include textStart;
+            display: block;
+            font-size: 25px;
+        }
+        .rightHomeSubtitle {
+            @include textStart;
+            font-size: 12px;
+        }
+    }
+
+    //! ABOUT
+    .whiteColorAbout {
+        align-content: center;
+        .leftAboutTitle {
+            @include greenLeafColor;
+            font-size: 25px
+        }
+        .leftAboutSubtitle {
+            font-size: 12px;
+        }
+        .rightAboutTitle {
+            @include greenLeafColor;
+            @include textStart;
+            display: block;
+            font-size: 25px;
+        }
+        .rightAboutSubtitle {
+            @include textStart;
+            font-size: 12px;
+        }
+    }
+
+    //! KEY FEATURES
+    .grayColorKeyFeatures {
+        background: #dad9d9;
+        align-content: center;
+        .leftKeyFeaturesTitle {
+            @include greenLeafColor;
+            @include textCenter;
+            font-size: 25px;
+        }
+        .leftKeyFeaturesSubtitle1 {
+            @include greenLeafColor;
+            font-size: 18px;
+        }
+        .leftKeyFeaturesSubtitle2 {
+            @include greenLeafColor;
+            font-size: 12px;
+        }
+        .leftKeyFeaturesSubtitle3 {
+            font-size: 12px;
+        }
+        .rightKeyFeaturesTitle {
+            @include greenLeafColor;
+            @include textStart;
+            display: block;
+            font-size: 25px;
+        }
+        .rightKeyFeaturesSubtitle {
+            @include textStart;
+            font-size: 12px;
+        }
+    }
+
+    .productsTitle {
+        @include greenLeafColor;
+        @include textCenter;
+        font-size: 25px;
+    }
+
+    //! COMPANY PROFILE
+    .grayColorCompanyProfile {
+        background: #282828;
+        color: whitesmoke;
+        align-content: center;
+        .leftCompanyProfileTitle {
+            font-size: 20px;
+        }
+        .leftCompanyProfileSubtitle {
+            font-size: 14px !important;
+            .link-fb, .link-ig, .link-li {
+                .bi {
+                    font-size: medium;
+                }
+                word-spacing: 6px;
+                font-size: 14px !important;
+            }
+        }
+        .footer-rights {
+            font-size: 14px;
+        }
+    }
+
+    #carouselProductMobile { 
+        .carousel-inner {
+            height: 300px !important;
+            max-height: 500px !important;
+        }
+    }
+
+    .imgDescription {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px 0px;
+        background: whitesmoke;
+        @include greenLeafColor;
+        visibility: hidden;
+        opacity: 0;
+        font-size: 20px;
+        
+        /* transition effect. not necessary */
+        transition: opacity .2s, visibility .2s;
+    }   
+    
+    .imgWrap:hover {
+        .imgDescription {
+            visibility: visible;
+            opacity: 0.8;
+        }
+    }
+
+    #btn-back-to-top {
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        bottom: 55px;
+        right: 10px;
+        // display: none;
+    }
+    
+    #bi-back-to-top::before {
+        font-size: medium;
+        font-weight: bold;
+        color: whitesmoke;
+    }
+
+    #btn-whatsapp {
+        background: #25d366 !important;
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        bottom: 10px;
+        right: 10px;
+        &:focus {
+            box-shadow:  0 0 0.5rem rgb(37, 211, 102, 1) !important;
+        }
+    }
+    
+    #bi-whatsapp::before {
+        font-size: medium;
+    }
+}
